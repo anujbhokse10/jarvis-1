@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jarvis</title>
 
-    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/logo.ico" type="image/x-icon">
 
     <!-- Bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -374,6 +374,9 @@
                             <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
                                 aria-selected="false">Phone Book</button>
+                            <button class="nav-link" id="nav-config-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-config" type="button" role="tab" aria-controls="nav-config"
+                                aria-selected="false">Settings</button>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -697,6 +700,51 @@
                             </div>
 
                         </div>
+
+                        <!-- tab 4  -->
+                        <div class="tab-pane fade" id="nav-config" role="tabpanel" aria-labelledby="nav-config-tab"
+                            tabindex="0">
+
+                            <div class="mt-4">
+                                
+                                <div class="row">
+                                    <!-- LEFT SIDE TAB -->
+                                    <div class="nav col-2 nav-pills me-3" id="v-pills-tab" role="tablist"
+                                        aria-orientation="vertical">
+                                        <button class="nav-link btn-style active" id="ApiKey-tab" data-bs-toggle="pill"
+                                            data-bs-target="#ApiKey" type="button" role="tab" aria-controls="ApiKey"
+                                            aria-selected="true">
+                                            API Key
+                                        </button>
+                                    </div>
+                                    <!-- RIGHT SIDE CONTENT -->
+                                    <div class="tab-content col-9" id="v-pills-tabContent">
+    
+                                        <div class="tab-pane fade show active" id="ApiKey" role="tabpanel"
+                                            aria-labelledby="ApiKey-tab">
+    
+                                            <div class="p-4">
+                                                <div class="mb-3 mt-4">
+                                                    <input type="password" class="form-control glassy-form" id="LLMAPIKey"
+                                                        placeholder="Enter your API key" required>
+                                                </div>
+    
+                                                <div class="text-center mt-4">
+                                                    <button id="configSaveBtn" class="btn btn-glow">
+                                                        Save
+                                                    </button>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
